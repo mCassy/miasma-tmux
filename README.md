@@ -7,10 +7,10 @@ This is a fork of [gruvbox-tmux](https://github.com/adibhanna/gruvbox-tmux) by a
 ## Installation
 
 ```
-set -g @plugin "YOUR_USERNAME/miasma-tmux"
+set -g @plugin "mCassy/miasma-tmux"
 
-# Optional: Configure GitHub status display (default: on)
-set -g @miasma-tmux_github_status on # on or off
+# Optional: Show current path
+set -g @miasma-tmux_show_path 1
 ```
 
 ## Features
@@ -54,15 +54,15 @@ Without GitHub CLI, the extension falls back to unauthenticated API requests whi
 
 Miasma is a dark-only colorscheme inspired by the woods:
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Background | `#222222` | Status bar background |
-| Foreground | `#d7c483` | Main text |
-| Green | `#78834b` | Active indicators, insertions |
-| Sage | `#5f875f` | Session name, borders |
-| Yellow | `#c9a554` | Changed files, last window |
-| Orange | `#bb7744` | Pull requests |
-| Rust | `#b36d43` | Deletions, issues |
+| Color      | Hex       | Usage                         |
+| ---------- | --------- | ----------------------------- |
+| Background | `#222222` | Status bar background         |
+| Foreground | `#d7c483` | Main text                     |
+| Green      | `#78834b` | Active indicators, insertions |
+| Sage       | `#5f875f` | Session name, borders         |
+| Yellow     | `#c9a554` | Changed files, last window    |
+| Orange     | `#bb7744` | Pull requests                 |
+| Rust       | `#b36d43` | Deletions, issues             |
 
 ## Credits
 
