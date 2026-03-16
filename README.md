@@ -16,12 +16,6 @@ set -g @miasma-tmux_show_path 1
 ## Features
 
 - **Git Status**: Shows current branch, sync status, and change counts
-- **GitHub Integration**: Displays open pull requests and issues count for the current repository
-  - Pull requests (orange)
-  - Issues (rust)
-  - Requires GitHub CLI (`gh`) for authenticated requests or falls back to unauthenticated API calls
-  - Results are cached for 5 minutes to improve performance
-  - Can be disabled with `set -g @miasma-tmux_github_status off`
 - **Custom Window Numbers**: Configurable window and pane number styles
 - **Path Widget**: Shows current directory path
 
@@ -40,16 +34,6 @@ set -g @miasma-tmux_session_bg on
 set -g @miasma-tmux_window_center off
 ```
 
-## GitHub Integration Setup
-
-For the best experience with GitHub integration:
-
-1. **Install GitHub CLI**: `brew install gh` (macOS) or follow [installation instructions](https://cli.github.com/)
-2. **Authenticate**: `gh auth login`
-3. **Enjoy unlimited API requests** without rate limiting
-
-Without GitHub CLI, the extension falls back to unauthenticated API requests which are rate-limited to 60 requests per hour per IP address.
-
 ## Color Palette
 
 Miasma is a dark-only colorscheme inspired by the woods:
@@ -61,8 +45,8 @@ Miasma is a dark-only colorscheme inspired by the woods:
 | Green      | `#78834b` | Active indicators, insertions |
 | Sage       | `#5f875f` | Session name, borders         |
 | Yellow     | `#c9a554` | Changed files, last window    |
-| Orange     | `#bb7744` | Pull requests                 |
-| Rust       | `#b36d43` | Deletions, issues             |
+| Orange     | `#bb7744` | Warnings                      |
+| Rust       | `#b36d43` | Deletions                     |
 
 ## Credits
 
