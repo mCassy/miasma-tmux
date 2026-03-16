@@ -26,10 +26,4 @@ THEME_bred="#b36d43"
 THEME_bwhite="#d7c483"
 THEME_byellow="#c9a554"
 
-# GitHub status colors
-THEME_ghgreen="#78834b"
-THEME_ghmagenta="#bb7744"
-THEME_ghred="#b36d43"
-THEME_ghyellow="#c9a554"
-
 RESET="#[fg=${THEME_foreground},bg=${THEME_background},nobold,noitalics,nounderscore,nodim]"

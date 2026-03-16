@@ -3,11 +3,12 @@
 # Imports
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 . "${ROOT_DIR}/lib/coreutils-compat.sh"
+source "$ROOT_DIR/src/themes.sh"
 
 # get value from tmux config
-SHOW_PATH=$(tmux show-option -gv @gruvbox-tmux_show_path 2>/dev/null)
-PATH_FORMAT=$(tmux show-option -gv @gruvbox-tmux_path_format 2>/dev/null) # full | relative
-RESET="#[fg=brightwhite,bg=#15161e,nobold,noitalics,nounderscore,nodim]"
+SHOW_PATH=$(tmux show-option -gv @miasma-tmux_show_path 2>/dev/null)
+PATH_FORMAT=$(tmux show-option -gv @miasma-tmux_path_format 2>/dev/null) # full | relative
+RESET="#[fg=${THEME_foreground},bg=${THEME_background},nobold,noitalics,nounderscore,nodim]"
 
 # check if not enabled
 if [ "${SHOW_PATH}" != "1" ]; then
@@ -23,4 +24,4 @@ if [[ ${PATH_FORMAT} == "relative" ]]; then
   current_path="$(echo ${current_path} | sed 's#'"$HOME"'#~#g')"
 fi
 
-echo "#[fg=blue,bg=default]░  ${RESET}#[bg=default]${current_path} "
+echo "#[fg=${THEME_blue},bg=default]░  ${RESET}#[bg=default]${current_path} "
