@@ -1,6 +1,8 @@
 # miasma-tmux
 
 A tmux theme inspired by the [miasma.nvim](https://github.com/xero/miasma.nvim) colorscheme - a fog descends upon your terminal.
+<img width="1482" height="34" alt="image" src="https://github.com/user-attachments/assets/89cf4162-5eea-4552-8daa-b8955171a061" />
+
 
 This is a fork of [gruvbox-tmux](https://github.com/adibhanna/gruvbox-tmux) by adibhanna (which itself is a fork of [tokyo-night-tmux](https://github.com/janoamaral/tokyo-night-tmux)). Colors have been updated to match the miasma colorscheme.
 
