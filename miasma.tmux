@@ -62,7 +62,7 @@ fi
 
 #+--- Windows ---+
 # Focus
-tmux set -g window-status-current-format "$RESET#[fg=${THEME_green},bg=${THEME_bblack}] #{?#{==:#{pane_current_command},ssh},󰣀,} #[fg=${THEME_foreground},bold,nodim]$window_number #W#[nobold]#{?window_zoomed_flag, $zoom_number, $custom_pane} #{?window_last_flag,,} "
+tmux set -g window-status-current-format "$RESET#[fg=${THEME_green},bg=${THEME_black}] #{?#{==:#{pane_current_command},ssh},󰣀,} #[fg=${THEME_foreground},bold,nodim]$window_number #W#[nobold]#{?window_zoomed_flag, $zoom_number, $custom_pane} "
 # Unfocused
 tmux set -g window-status-format "$RESET#[fg=${THEME_foreground}] #{?#{==:#{pane_current_command},ssh},󰣀,}${RESET} $window_number #W#[nobold,dim]#{?window_zoomed_flag, $zoom_number, $custom_pane} #[fg=${THEME_yellow}]#{?window_last_flag,󰁯 , } "
 
