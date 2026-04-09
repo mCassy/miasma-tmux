@@ -17,7 +17,6 @@ set -g @miasma-tmux_show_path 1
 
 ## Features
 
-- **Git Status**: Shows current branch, sync status, and change counts
 - **Custom Window Numbers**: Configurable window and pane number styles
 - **Path Widget**: Shows current directory path
 
